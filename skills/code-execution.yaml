@@ -1,0 +1,63 @@
+schema_version: "1.0"
+kind: Skill
+metadata:
+  name: code-execution
+  version: "1.0.0"
+  description: "Execute code in a sandboxed environment and return the output"
+  tags:
+    - code
+    - execution
+    - programming
+    - sandbox
+
+spec:
+  display_name: "Code Execution"
+  description: |
+    Executes a snippet of code in a secure, sandboxed environment and returns
+    the standard output, standard error, and exit code. Supports multiple
+    programming languages. Use this skill to run calculations, data
+    transformations, or validate logic programmatically.
+
+  parameters:
+    type: object
+    properties:
+      code:
+        type: string
+        description: "The source code to execute"
+      language:
+        type: string
+        description: "Programming language of the code snippet"
+        enum:
+          - python
+          - javascript
+          - bash
+          - ruby
+          - go
+        default: python
+      timeout_seconds:
+        type: integer
+        description: "Maximum execution time in seconds before the process is terminated"
+        default: 30
+        minimum: 1
+        maximum: 300
+      stdin:
+        type: string
+        description: "Optional standard input to pipe into the program"
+    required:
+      - code
+
+  returns:
+    type: object
+    properties:
+      stdout:
+        type: string
+        description: "Standard output produced by the program"
+      stderr:
+        type: string
+        description: "Standard error output produced by the program"
+      exit_code:
+        type: integer
+        description: "Exit code returned by the program (0 indicates success)"
+      execution_time_ms:
+        type: integer
+        description: "Actual execution time in milliseconds"

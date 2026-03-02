@@ -1,0 +1,73 @@
+schema_version: "1.0"
+kind: Skill
+metadata:
+  name: file-operations
+  version: "1.0.0"
+  description: "Read, write, list, and delete files within an allowed workspace directory"
+  tags:
+    - files
+    - storage
+    - io
+    - filesystem
+
+spec:
+  display_name: "File Operations"
+  description: |
+    Provides basic file-system operations within a sandboxed workspace directory.
+    Supports reading file contents, writing or appending text, listing directory
+    contents, and deleting files. All paths are resolved relative to the agent's
+    workspace root; absolute paths outside the workspace are rejected for security.
+
+  parameters:
+    type: object
+    properties:
+      action:
+        type: string
+        description: "The file operation to perform"
+        enum:
+          - read
+          - write
+          - append
+          - list
+          - delete
+      path:
+        type: string
+        description: "Relative path to the file or directory within the workspace"
+      content:
+        type: string
+        description: "Text content to write or append to the file (required for 'write' and 'append')"
+      encoding:
+        type: string
+        description: "Character encoding to use when reading or writing the file"
+        default: "utf-8"
+    required:
+      - action
+      - path
+
+  returns:
+    type: object
+    properties:
+      success:
+        type: boolean
+        description: "Whether the operation completed successfully"
+      content:
+        type: string
+        description: "File content when action is 'read'"
+      entries:
+        type: array
+        description: "Directory listing when action is 'list'"
+        items:
+          type: object
+          properties:
+            name:
+              type: string
+              description: "File or directory name"
+            type:
+              type: string
+              description: "Entry type: 'file' or 'directory'"
+              enum:
+                - file
+                - directory
+            size_bytes:
+              type: integer
+              description: "File size in bytes (0 for directories)"

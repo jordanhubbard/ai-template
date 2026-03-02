@@ -1,0 +1,101 @@
+schema_version: "1.0"
+kind: Skill
+metadata:
+  name: image-analysis
+  version: "1.0.0"
+  description: "Analyze images to extract descriptions, objects, text, and structured data"
+  tags:
+    - image
+    - vision
+    - ocr
+    - multimodal
+
+spec:
+  display_name: "Image Analysis"
+  description: |
+    Analyzes an image provided as a URL or base64-encoded data and returns
+    structured information about its contents. Supports general scene
+    description, object detection, optical character recognition (OCR), and
+    face or sentiment detection depending on the configured analysis types.
+    Use this skill to understand visual content or extract text from images.
+    Either image_url or image_data must be provided; when image_data is used
+    image_format is also required.
+
+  parameters:
+    type: object
+    properties:
+      image_url:
+        type: string
+        description: "Publicly accessible HTTPS URL of the image to analyse"
+      image_data:
+        type: string
+        description: "Base64-encoded image data (alternative to image_url)"
+      image_format:
+        type: string
+        description: "MIME type of the base64 image (required when using image_data)"
+        enum:
+          - image/jpeg
+          - image/png
+          - image/gif
+          - image/webp
+      analysis_types:
+        type: array
+        description: "Types of analysis to perform (default: ['description'])"
+        items:
+          type: string
+          enum:
+            - description
+            - objects
+            - ocr
+            - sentiment
+            - tags
+        default:
+          - description
+      language:
+        type: string
+        description: "BCP-47 language code for returned text (default: 'en')"
+        default: "en"
+    required:
+      - image_url
+
+  returns:
+    type: object
+    properties:
+      description:
+        type: string
+        description: "Natural language description of the image"
+      objects:
+        type: array
+        description: "Detected objects with confidence scores"
+        items:
+          type: object
+          properties:
+            label:
+              type: string
+              description: "Object class label"
+            confidence:
+              type: number
+              description: "Detection confidence between 0 and 1"
+            bounding_box:
+              type: object
+              description: "Normalized bounding box coordinates"
+              properties:
+                x:
+                  type: number
+                y:
+                  type: number
+                width:
+                  type: number
+                height:
+                  type: number
+      ocr_text:
+        type: string
+        description: "All text extracted from the image via OCR"
+      tags:
+        type: array
+        description: "Descriptive tags associated with the image"
+        items:
+          type: string
+      sentiment:
+        type: string
+        description: "Overall sentiment detected in the image (positive, neutral, negative)"

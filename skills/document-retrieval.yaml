@@ -1,0 +1,66 @@
+schema_version: "1.0"
+kind: Skill
+metadata:
+  name: document-retrieval
+  version: "1.0.0"
+  description: "Retrieve and search through documents from a knowledge base or storage"
+  tags:
+    - documents
+    - retrieval
+    - rag
+    - knowledge-base
+
+spec:
+  display_name: "Document Retrieval"
+  description: |
+    Searches a configured knowledge base or document store for passages relevant
+    to a query using semantic similarity. Returns the most relevant document
+    chunks along with their source metadata. Ideal for retrieval-augmented
+    generation (RAG) workflows where the agent needs grounding from a corpus of
+    documents.
+
+  parameters:
+    type: object
+    properties:
+      query:
+        type: string
+        description: "Natural language query used to find relevant documents"
+      top_k:
+        type: integer
+        description: "Number of top document chunks to return (default: 5)"
+        default: 5
+        minimum: 1
+        maximum: 50
+      knowledge_base_id:
+        type: string
+        description: "Identifier of the knowledge base or document collection to search"
+      filters:
+        type: object
+        description: "Optional key-value metadata filters to narrow the search scope"
+        additionalProperties:
+          type: string
+    required:
+      - query
+
+  returns:
+    type: object
+    properties:
+      documents:
+        type: array
+        description: "List of retrieved document chunks ranked by relevance"
+        items:
+          type: object
+          properties:
+            content:
+              type: string
+              description: "Text content of the document chunk"
+            score:
+              type: number
+              description: "Relevance score between 0 and 1 (higher is more relevant)"
+            source:
+              type: string
+              description: "Source identifier or filename of the document"
+            metadata:
+              type: object
+              description: "Additional metadata associated with the document chunk"
+              additionalProperties: true

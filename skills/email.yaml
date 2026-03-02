@@ -1,0 +1,101 @@
+schema_version: "1.0"
+kind: Skill
+metadata:
+  name: email
+  version: "1.0.0"
+  description: "Send emails and read email messages from a configured mailbox"
+  tags:
+    - email
+    - communication
+    - messaging
+
+spec:
+  display_name: "Email"
+  description: |
+    Provides capabilities to send emails and retrieve messages from a configured
+    email account. Supports plain text and HTML content, attachments, and
+    filtering of the inbox. Use this skill to notify users, send reports, or
+    read incoming messages as part of an automated workflow.
+
+  parameters:
+    type: object
+    properties:
+      action:
+        type: string
+        description: "The email action to perform"
+        enum:
+          - send
+          - list
+          - read
+      to:
+        type: array
+        description: "List of recipient email addresses (required for 'send')"
+        items:
+          type: string
+      cc:
+        type: array
+        description: "List of CC email addresses"
+        items:
+          type: string
+      subject:
+        type: string
+        description: "Email subject line (required for 'send')"
+      body:
+        type: string
+        description: "Email body content (required for 'send')"
+      body_type:
+        type: string
+        description: "Content type of the body"
+        enum:
+          - plain
+          - html
+        default: plain
+      message_id:
+        type: string
+        description: "Unique identifier of the message to read (required for 'read')"
+      folder:
+        type: string
+        description: "Mailbox folder to list messages from (default: 'INBOX')"
+        default: "INBOX"
+      max_messages:
+        type: integer
+        description: "Maximum number of messages to retrieve when listing (default: 10)"
+        default: 10
+        minimum: 1
+        maximum: 100
+    required:
+      - action
+
+  returns:
+    type: object
+    properties:
+      success:
+        type: boolean
+        description: "Whether the action completed successfully"
+      message_id:
+        type: string
+        description: "ID of the sent or read message"
+      messages:
+        type: array
+        description: "List of email message summaries when action is 'list'"
+        items:
+          type: object
+          properties:
+            id:
+              type: string
+              description: "Unique message identifier"
+            subject:
+              type: string
+              description: "Email subject"
+            from:
+              type: string
+              description: "Sender email address"
+            date:
+              type: string
+              description: "ISO 8601 date the message was received"
+            snippet:
+              type: string
+              description: "Short preview of the message body"
+      body:
+        type: string
+        description: "Full body of the email when action is 'read'"

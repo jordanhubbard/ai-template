@@ -1,0 +1,59 @@
+schema_version: "1.0"
+kind: Skill
+metadata:
+  name: web-search
+  version: "1.0.0"
+  description: "Search the web for current information and return relevant results"
+  tags:
+    - search
+    - web
+    - information-retrieval
+
+spec:
+  display_name: "Web Search"
+  description: |
+    Searches the web for information based on a query string and returns a list
+    of relevant results including titles, URLs, and snippets. Use this skill
+    when you need up-to-date information, news, or facts not available in your
+    training data.
+
+  parameters:
+    type: object
+    properties:
+      query:
+        type: string
+        description: "The search query string to look up on the web"
+      num_results:
+        type: integer
+        description: "The maximum number of search results to return (default: 5, max: 20)"
+        default: 5
+        minimum: 1
+        maximum: 20
+      language:
+        type: string
+        description: "BCP-47 language code to restrict results (e.g., 'en', 'fr', 'de')"
+        default: "en"
+    required:
+      - query
+
+  returns:
+    type: object
+    properties:
+      results:
+        type: array
+        description: "List of search results"
+        items:
+          type: object
+          properties:
+            title:
+              type: string
+              description: "Title of the search result"
+            url:
+              type: string
+              description: "URL of the search result"
+            snippet:
+              type: string
+              description: "Short excerpt or description of the page content"
+      total_results:
+        type: integer
+        description: "Total number of results found"

@@ -1,0 +1,76 @@
+schema_version: "1.0"
+kind: Skill
+metadata:
+  name: text-summarization
+  version: "1.0.0"
+  description: "Summarize long text documents into concise, structured summaries"
+  tags:
+    - text
+    - summarization
+    - nlp
+    - content
+
+spec:
+  display_name: "Text Summarization"
+  description: |
+    Condenses a long body of text into a concise summary using configurable
+    length and style options. Supports extractive and abstractive summarization
+    modes, bullet-point or paragraph output formats, and focus topics to
+    guide which aspects of the text to emphasize. Use this skill to quickly
+    understand lengthy documents, articles, or reports.
+
+  parameters:
+    type: object
+    properties:
+      text:
+        type: string
+        description: "The input text to summarize"
+      max_sentences:
+        type: integer
+        description: "Maximum number of sentences in the summary (default: 5)"
+        default: 5
+        minimum: 1
+        maximum: 50
+      mode:
+        type: string
+        description: "Summarization mode: 'abstractive' generates new text, 'extractive' selects existing sentences"
+        enum:
+          - abstractive
+          - extractive
+        default: abstractive
+      format:
+        type: string
+        description: "Output format of the summary"
+        enum:
+          - paragraph
+          - bullet_points
+        default: paragraph
+      focus_topics:
+        type: array
+        description: "Optional list of topics or keywords to focus the summary on"
+        items:
+          type: string
+      language:
+        type: string
+        description: "BCP-47 language code for the output summary (default: 'en')"
+        default: "en"
+    required:
+      - text
+
+  returns:
+    type: object
+    properties:
+      summary:
+        type: string
+        description: "The generated summary text"
+      key_points:
+        type: array
+        description: "List of key points extracted from the text"
+        items:
+          type: string
+      word_count_original:
+        type: integer
+        description: "Word count of the original input text"
+      word_count_summary:
+        type: integer
+        description: "Word count of the generated summary"

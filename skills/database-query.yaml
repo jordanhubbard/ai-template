@@ -1,0 +1,62 @@
+schema_version: "1.0"
+kind: Skill
+metadata:
+  name: database-query
+  version: "1.0.0"
+  description: "Execute read-only SQL queries against a configured database to analyze structured data"
+  tags:
+    - database
+    - sql
+    - data
+    - query
+
+spec:
+  display_name: "Database Query"
+  description: |
+    Executes a read-only SQL SELECT query against a preconfigured database
+    connection and returns the resulting rows as structured data. This skill
+    enforces read-only access; INSERT, UPDATE, DELETE, and DDL statements are
+    not permitted. Use this skill to retrieve, aggregate, or analyze structured
+    data stored in relational databases.
+
+  parameters:
+    type: object
+    properties:
+      sql:
+        type: string
+        description: "A valid SELECT SQL statement to execute against the database"
+      database_id:
+        type: string
+        description: "Identifier of the database connection to use"
+      parameters:
+        type: array
+        description: "Ordered list of bind parameter values for parameterised queries"
+        items:
+          type: string
+      max_rows:
+        type: integer
+        description: "Maximum number of rows to return (default: 100, max: 1000)"
+        default: 100
+        minimum: 1
+        maximum: 1000
+    required:
+      - sql
+
+  returns:
+    type: object
+    properties:
+      columns:
+        type: array
+        description: "Ordered list of column names in the result set"
+        items:
+          type: string
+      rows:
+        type: array
+        description: "List of result rows; each row is an array of values corresponding to columns"
+        items:
+          type: array
+          items:
+            type: string
+      row_count:
+        type: integer
+        description: "Total number of rows returned"

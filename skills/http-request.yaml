@@ -1,0 +1,75 @@
+schema_version: "1.0"
+kind: Skill
+metadata:
+  name: http-request
+  version: "1.0.0"
+  description: "Make HTTP requests to external APIs and return the response"
+  tags:
+    - http
+    - api
+    - rest
+    - integration
+
+spec:
+  display_name: "HTTP Request"
+  description: |
+    Sends an HTTP request to a specified URL and returns the response status,
+    headers, and body. Supports GET, POST, PUT, PATCH, and DELETE methods.
+    Use this skill to integrate with external REST APIs, webhooks, or any
+    HTTP-accessible service. Connections to private network ranges are blocked
+    for security.
+
+  parameters:
+    type: object
+    properties:
+      method:
+        type: string
+        description: "HTTP method to use"
+        enum:
+          - GET
+          - POST
+          - PUT
+          - PATCH
+          - DELETE
+        default: GET
+      url:
+        type: string
+        description: "Full URL to send the request to (must use HTTPS)"
+      headers:
+        type: object
+        description: "Optional HTTP request headers as key-value pairs"
+        additionalProperties:
+          type: string
+      body:
+        type: string
+        description: "Request body content (used for POST, PUT, PATCH)"
+      content_type:
+        type: string
+        description: "MIME type of the request body (e.g., 'application/json')"
+        default: "application/json"
+      timeout_seconds:
+        type: integer
+        description: "Request timeout in seconds (default: 30)"
+        default: 30
+        minimum: 1
+        maximum: 120
+    required:
+      - url
+
+  returns:
+    type: object
+    properties:
+      status_code:
+        type: integer
+        description: "HTTP response status code"
+      headers:
+        type: object
+        description: "HTTP response headers as key-value pairs"
+        additionalProperties:
+          type: string
+      body:
+        type: string
+        description: "Response body as a string"
+      elapsed_ms:
+        type: integer
+        description: "Time taken for the request in milliseconds"
