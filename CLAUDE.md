@@ -15,16 +15,28 @@ Every project MUST have the following top-level directories and files:
 - `Makefile` — With at least the required targets (see Makefile section below)
 - `LICENSE` — Project license file
 
+## Behavior Switches (`skills/config.yaml`)
+
+Before enforcing convention-level rules, read `skills/config.yaml` in the repository root.
+If the file is missing, use these defaults:
+
+- `behavior_switches.provenance_story.enabled: true`
+- `behavior_switches.provenance_story.require_readme_section: true`
+- `behavior_switches.provenance_story.update_chronicle: true`
+
+Downstream repositories created from this template can override these switches to opt out of specific conventions.
+
 ## README.md
 
 Every project README must be **unique to the project** — not the generic ai-template README.
 When creating or rewriting a README for a new project:
 
 1. Write a project-specific README covering: what it is, features, quick start, configuration, development, and deployment.
-2. **Include the PROVENANCE origin story.** Use the PROVENANCE skill (`skills/PROVENANCE.md`) to write a new chapter in the "Totally True and Not At All Embellished History" chronicle. This is mandatory for every AI-assisted project. The origin story goes near the end of the README, before the License section.
-3. Follow the full PROVENANCE checklist: determine the next Part number, update the previous Part's forward links and project count, write the new chapter, and update the chronicle table in `skills/PROVENANCE.md`.
+2. If `behavior_switches.provenance_story.enabled` and `behavior_switches.provenance_story.require_readme_section` are both `true`, **include the PROVENANCE origin story**. Use the PROVENANCE skill (`skills/PROVENANCE.md`) to write a new chapter in the "Totally True and Not At All Embellished History" chronicle. Place it near the end of the README, before the License section.
+3. If step 2 is active and `behavior_switches.provenance_story.update_chronicle` is `true`, follow the full PROVENANCE checklist: determine the next Part number, update the previous Part's forward links and project count, write the new chapter, and update the chronicle table in `skills/PROVENANCE.md`.
+4. If either provenance switch is off, the origin story is optional and must not be enforced.
 
-If the README still contains the generic ai-template text ("All skills and AI template files required to implement any of my repositories"), it has not been customized yet — fix it.
+If the README still looks like the generic ai-template README (for example, title still `ai-template` and unchanged template sections), it has not been customized yet — fix it.
 
 ## Makefile
 
@@ -61,4 +73,4 @@ Additional targets (`lint`, `status`, `configure`, `help`, etc.) are encouraged 
 Reusable AI prompt templates live in `skills/`. See `skills/README.md` for the index.
 When a skill applies to the current task, use it. Key skills:
 
-- **PROVENANCE** — Write the project origin story chapter (mandatory for every new project)
+- **PROVENANCE** — Write the project origin story chapter when provenance switches are enabled in `skills/config.yaml`

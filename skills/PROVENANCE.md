@@ -6,9 +6,27 @@ Use this skill to add or update the "Totally True and Not At All Embellished His
 
 ## When to Use
 
+- `skills/config.yaml` enables provenance behavior (`behavior_switches.provenance_story.enabled: true`)
 - A new repository needs its origin story added to its README
 - An existing chapter needs updating (new features, new part number, new cross-references)
 - A new repository is being added to the chronicle and needs to be chained to the existing parts
+
+---
+
+## Configuration Gate (`skills/config.yaml`)
+
+Before applying this skill, read `skills/config.yaml` in the repository root.
+If the file is missing, default to:
+
+- `behavior_switches.provenance_story.enabled: true`
+- `behavior_switches.provenance_story.require_readme_section: true`
+- `behavior_switches.provenance_story.update_chronicle: true`
+
+How to interpret switches:
+
+- If `enabled: false`, do not add or enforce the backstory section.
+- If `enabled: true` but `require_readme_section: false`, treat the section as optional.
+- If `update_chronicle: false`, skip cross-repository chain/table maintenance and only edit the local README when requested.
 
 ---
 
@@ -30,7 +48,7 @@ When adding a new Part N:
 2. Update Part N-1's origin story to add a forward reference to Part N.
 3. Update Part N-1's closing sentence to mention "all N projects" if it currently says "all N-1 projects."
 4. Write Part N's section in the new repository's README.
-5. **Update this table** to add Part N.
+5. If `behavior_switches.provenance_story.update_chronicle` is `true`, **update this table** to add Part N.
 
 ---
 
@@ -103,11 +121,11 @@ For Part 1 (shemacs), this sentence appears within the body and links to Part 2 
 
 - [ ] Read the repository's README and key source files to gather story material
 - [ ] Determine the next Part number (N)
-- [ ] Update the previous last part (N-1):
+- [ ] If `update_chronicle: true`, update the previous last part (N-1):
   - [ ] Add forward link `[Part N: <Name> →]` to the nav line in the header block
   - [ ] Add a forward-reference sentence at the end of the story body (e.g., "What the programmer did next is documented in...")
   - [ ] Update "all N-1 projects" → "all N projects" in the closing sentence
   - [ ] Add the new domain-specific citation to Sir Reginald's list
 - [ ] Write the new Part N section in the new repository's README
-- [ ] Update the chronicle table in this file to add Part N
+- [ ] If `update_chronicle: true`, update the chronicle table in this file to add Part N
 - [ ] Commit and release all affected repositories
