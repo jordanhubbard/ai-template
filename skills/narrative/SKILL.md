@@ -10,6 +10,13 @@ installing or referencing it does not require stories in future README edits.
 Missing configuration enables no automatic behavior. An explicit user request
 supplies the scope; legacy switches do not broaden that scope.
 
+## Eligibility
+
+This author’s narrative convention applies to original work. Forks of other
+people’s repositories do not qualify, even when they contain substantial local
+changes or recent AI co-author credits. Verify repository fork status and
+lineage before adding a story or a chronicle entry.
+
 ## Preserve the project
 
 Read the existing README and enough project documentation or source to ground

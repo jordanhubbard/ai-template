@@ -5,16 +5,15 @@ The active reading order for Jordan Hubbard’s AI-assisted project narratives.
 ## Scope and chronology
 
 Audited on **2026-09-15**, using a six-month window beginning **2026-03-15 UTC**.
-A participating repository is unarchived and has a coding-agent co-author credit,
-with recorded AI-assisted activity inside that window. Inherited upstream AI
-activity alone does not qualify a fork. Dependency-update bots do not count as
+A participating repository contains original work, is unarchived, and has a coding-agent co-author credit,
+with recorded AI-assisted activity inside that window. Forks of other people’s
+repositories are excluded, regardless of local AI contributions. Dependency-update bots do not count as
 AI coding agents. Eligibility is a snapshot, not an instruction to delete stories
 when a project becomes inactive.
 
 Chapters are ordered by the earliest recorded AI-assisted commit in the reviewed
 project history (Git committer timestamp, normalized to UTC). The full available
-default-branch history was examined for ordering; fork-specific history excludes
-upstream ancestry. Additional branches of excluded candidates were checked for
+default-branch history was examined for ordering. Additional branches of excluded candidates were checked for
 qualifying activity. Repository creation time is a fallback only; no fallback
 was needed for this edition. Repository name breaks an exact timestamp tie.
 
@@ -47,15 +46,12 @@ participates without being replaced by a second story.
 | 17 | [PythonOS](https://github.com/jordanhubbard/pythonos#the-totally-true-and-not-at-all-embellished-history-of-pythonos) | [2026-04-27](https://github.com/jordanhubbard/pythonos/commit/96a29eb3108d43c81d5610201f37ff5590d233f0) | [2026-09-09](https://github.com/jordanhubbard/pythonos/commit/8060c43afbbd3c64f27e9e46f907314684aa8135) | Preserved story; repaired navigation |
 | 18 | [mac](https://github.com/jordanhubbard/mac#the-totally-true-and-not-at-all-embellished-history-of-mac) | [2026-05-18](https://github.com/jordanhubbard/mac/commit/f6993b1dc034351250cfd0931af76ce738280935) | [2026-09-07](https://github.com/jordanhubbard/mac/commit/b51f031a5b7d40d2ada6c11673c5596164f835b3) | Added missing story |
 | 19 | [c26](https://github.com/jordanhubbard/c26#the-totally-true-and-not-at-all-embellished-history-of-c26) | [2026-05-26](https://github.com/jordanhubbard/c26/commit/c848ead4822d51659f9d57ef48543f028f7e5b52) | [2026-07-22](https://github.com/jordanhubbard/c26/commit/1df2b782afb1323c15d94226723f9e43c567fe0f) | Added missing story |
-| 20 | [Orca-Flashforge](https://github.com/jordanhubbard/Orca-Flashforge#the-totally-true-and-not-at-all-embellished-history-of-orca-flashforge) | [2026-07-12](https://github.com/jordanhubbard/Orca-Flashforge/commit/596cd8fc5f12982d4764b85ef652f399d0d63607) | [2026-07-14](https://github.com/jordanhubbard/Orca-Flashforge/commit/1d00c39c28e0eb2a1a667d341a47da80457cf52e) | Added missing story |
-| 21 | [OrcaSlicer](https://github.com/jordanhubbard/OrcaSlicer#the-totally-true-and-not-at-all-embellished-history-of-orcaslicer) | [2026-07-13](https://github.com/jordanhubbard/OrcaSlicer/commit/c47315e01955809330b1926db54df80595fd8bdd) | [2026-07-31](https://github.com/jordanhubbard/OrcaSlicer/commit/287e49263350d4b1a8c171e8aeabe95e48ce7a86) | Added missing story |
 
 The complete [eligibility audit](reports/2026-09-15-eligibility.md) records all excluded repositories.
 
 ## Exclusions and historical links
 
-- `precis-mcp`, `omarchy`, and `frustbsd`: recent AI credits found in inherited upstream history, with no qualifying recent fork-specific credit found.
-- `winget-pkgs`: default branch has no commits ahead of upstream; no qualifying fork-specific activity found in its additional branches.
+- All forks are excluded, including `Orca-Flashforge`, `OrcaSlicer`, `precis-mcp`, `omarchy`, `frustbsd`, and `winget-pkgs`. Substantial local work or AI co-author credits do not change that scope boundary.
 - Recent projects including `RubyOS`, `RemoteOS-SDL`, `project-tracker`, and `mac-fleet-canary` have no qualifying AI co-author trailers in the reviewed history. Their omission is not a claim that humans wrote them without AI.
 - Archived repositories are outside this edition. Renames use canonical current repository URLs; no retired repository occupies a navigation slot. Existing historical references remain where they are part of a story rather than active navigation.
 - `ai-template` itself had no qualifying activity inside the window at audit time. This maintenance operation does not retroactively qualify a project.

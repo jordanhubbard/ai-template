@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-15",
   "cutoff": "2026-03-15T00:00:00Z",
-  "ordering": "Earliest qualifying commit timestamp (committer date), normalized to UTC; repository name breaks ties. Forks use fork-specific history, excluding upstream ancestry.",
+  "ordering": "Earliest qualifying commit timestamp (committer date), normalized to UTC; repository name breaks ties. Only original-work repositories qualify; forks are excluded.",
   "chapters": [
     {
       "part": 1,
@@ -594,7 +594,7 @@
       "existing": false,
       "base_sha": "1df2b782afb1323c15d94226723f9e43c567fe0f",
       "original_sha256": "2dc9dc0a8d1664ed082ca93ae8fb1cd79cd6ef5db583fd40c7b0c31552e07019",
-      "updated_sha256": "370d46bcaa9ba6bf64751dd6c203e60ee30504715e64e5544e307d57072c79f6",
+      "updated_sha256": "18afc7c3ea73bf9074d7cc1dc62bac945301f2e28d0dd45bbd99b6f030e0e7b1",
       "first_ai": {
         "sha": "c848ead4822d51659f9d57ef48543f028f7e5b52",
         "author_date": "2026-05-25T19:28:30-07:00",
@@ -615,72 +615,7 @@
           "Co-Authored-By: Claude Opus 4.8 <noreply@anthropic"
         ]
       }
-    },
-    {
-      "part": 20,
-      "name": "Orca-Flashforge",
-      "label": "Orca-Flashforge",
-      "readme": "README.md",
-      "heading": "The Totally True and Not At All Embellished History of Orca-Flashforge",
-      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-orca-flashforge",
-      "chapter_url": "https://github.com/jordanhubbard/Orca-Flashforge#the-totally-true-and-not-at-all-embellished-history-of-orca-flashforge",
-      "existing": false,
-      "base_sha": "1d00c39c28e0eb2a1a667d341a47da80457cf52e",
-      "original_sha256": "354396810a8593c03ce380eb4956db527b78c9aa20987efdd62201d2dce88b14",
-      "updated_sha256": "7f79d4eb6b2f8091a494fc1e8dda1f19e019d2948ffa44b52812ef75b5b7458a",
-      "first_ai": {
-        "sha": "596cd8fc5f12982d4764b85ef652f399d0d63607",
-        "author_date": "2026-07-12T13:51:15+01:00",
-        "date": "2026-07-12T14:37:57+01:00",
-        "author": "Jordan Hubbard",
-        "subject": "Fix build on macOS 26 / Xcode 26 (clang 21) with CMake 4",
-        "trailers": [
-          "Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic"
-        ]
-      },
-      "last_ai": {
-        "sha": "1d00c39c28e0eb2a1a667d341a47da80457cf52e",
-        "author_date": "2026-07-14T19:11:50+01:00",
-        "date": "2026-07-14T19:11:50+01:00",
-        "author": "Jordan Hubbard",
-        "subject": "fix(ai): don't double the /v1 segment in provider endpoint URLs",
-        "trailers": [
-          "Co-Authored-By: Claude Fable 5 <noreply@anthropic"
-        ]
-      }
-    },
-    {
-      "part": 21,
-      "name": "OrcaSlicer",
-      "label": "OrcaSlicer",
-      "readme": "README.md",
-      "heading": "The Totally True and Not At All Embellished History of OrcaSlicer",
-      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-orcaslicer",
-      "chapter_url": "https://github.com/jordanhubbard/OrcaSlicer#the-totally-true-and-not-at-all-embellished-history-of-orcaslicer",
-      "existing": false,
-      "base_sha": "5434d2cf2eb8129cb2ebdc06438b2a1ca8628eb7",
-      "original_sha256": "3499e5fa42636b572a64118811f5c7d29f01126506ee00538ca9797e6fa6d903",
-      "updated_sha256": "715430059c7e87a95191006919871f077ba2185ad1aef183f7918b348e2c1002",
-      "first_ai": {
-        "sha": "c47315e01955809330b1926db54df80595fd8bdd",
-        "author_date": "2026-07-13T17:44:40+01:00",
-        "date": "2026-07-13T17:44:40+01:00",
-        "author": "Jordan Hubbard",
-        "subject": "Add Flashforge Adventurer 5M Pro (Klipper mod) printer profiles",
-        "trailers": [
-          "Co-Authored-By: Claude Fable 5 <noreply@anthropic"
-        ]
-      },
-      "last_ai": {
-        "sha": "287e49263350d4b1a8c171e8aeabe95e48ce7a86",
-        "author_date": "2026-07-31T17:25:05+00:00",
-        "date": "2026-07-31T17:29:10+00:00",
-        "author": "MAC Fleet Worker",
-        "subject": "docs(ai): architecture PLAN, rewritten user guide, upstream PR notes",
-        "trailers": [
-          "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic"
-        ]
-      }
     }
-  ]
+  ],
+  "scope": "Unarchived original-work repositories with an AI coding-agent co-author and recent AI-assisted activity. Forks of other projects are excluded regardless of local contributions."
 }

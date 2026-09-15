@@ -16,7 +16,8 @@ You can also install the `skills/narrative/` folder in your assistant's supporte
 skill location, or append a reference to your existing instructions. Adoption
 does not require copying this repository's root files.
 
-The skill preserves existing stories and functional README content. Standalone
+The narrative convention applies to original-work repositories; forks of other
+projects are excluded. The skill preserves existing stories and functional README content. Standalone
 stories are supported. Joining or repairing the shared chronicle is a separate,
 explicitly requested task; see [the chronicle index](CHRONICLE.md).
 
