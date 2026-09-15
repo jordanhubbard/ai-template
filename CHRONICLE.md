@@ -67,6 +67,9 @@ The machine-readable evidence is [chronicle.json](chronicle.json). Its base
 commits and README hashes record exactly which content was preserved during
 this retrofit.
 
+The [publication report](reports/2026-09-15-publication.md) links each repository's
+integrated change and records the fork restorations.
+
 ### Validate the chain
 
 ```sh
