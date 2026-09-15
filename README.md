@@ -1,90 +1,64 @@
 # ai-template
 
-A project template that enforces consistent conventions, structured development workflows, and a distinctive documentation persona across all AI-assisted repositories.
+Reusable AI skills for existing repositories, with a distinctive project-story
+voice and optional examples for new projects and assistant integrations.
 
-Repositories cloned from this template automatically inherit rules and skills that guide AI coding assistants — no manual setup or repeated prompting required.
+## Add a narrative to an existing repository
 
-## Behavior Switches (`skills/config.yaml`)
+Ask your assistant:
 
-This template now ships with behavior switches so downstream repositories can opt out of conventions they do not want. That includes the README backstory requirement.
-
-Default switches:
-
-```yaml
-behavior_switches:
-  provenance_story:
-    enabled: true
-    require_readme_section: true
-    update_chronicle: true
-  responsible_vibe_workflow:
-    enabled: true
+```text
+Use /path/to/ai-template/skills/narrative/SKILL.md to add a project origin story
+only if this README does not already have one. Preserve existing documentation.
 ```
 
-If a repository built from this template wants a more neutral documentation style, set:
+You can also install the `skills/narrative/` folder in your assistant's supported
+skill location, or append a reference to your existing instructions. Adoption
+does not require copying this repository's root files.
 
-```yaml
-behavior_switches:
-  provenance_story:
-    enabled: false
-```
+The skill preserves existing stories and functional README content. Standalone
+stories are supported. Joining or repairing the shared chronicle is a separate,
+explicitly requested task; see [the chronicle index](CHRONICLE.md).
 
-## What It Does
+## What's included
 
-**ai-template** solves the problem of repeating yourself to AI assistants. Instead of explaining your project conventions every session, this template encodes them once and applies them everywhere:
+| Path | Purpose |
+|------|---------|
+| [skills/narrative/SKILL.md](skills/narrative/SKILL.md) | Narrative style and non-destructive adoption guidance |
+| [skills/PROVENANCE.md](skills/PROVENANCE.md) | Compatibility with older skill references |
+| [CHRONICLE.md](CHRONICLE.md) | Shared chapter index and ordering evidence |
+| [scripts/check_chronicle.py](scripts/check_chronicle.py) | Read-only chain and README preservation checks |
+| [examples/integrations/](examples/integrations/README.md) | Optional assistant and workflow configuration examples |
+| [starters/](starters/README.md) | Optional conventions for new projects |
 
-- **Project structure enforcement** — Required directories (`tests/`, `docs/`), Makefile targets (`make`, `make test`, `make start`, `make stop`, `make restart`, `make clean`), and minimum 70% test coverage.
-- **Structured development workflows** — Integration with [responsible-vibe-mcp](https://github.com/mrsimpson/responsible-vibe-mcp) for phase-based development (planning, implementation, testing, review) instead of unstructured "vibe coding."
-- **Configurable documentation persona** — The PROVENANCE skill can add a humorous serialized origin story (the programmer and Sir Reginald von Fluffington III), but this behavior is controlled by `skills/config.yaml` so downstream repositories can opt out.
-- **Security and quality guardrails** — OWASP top-10 awareness, no over-engineering, no scope creep beyond what was requested.
+No mandatory layout, Makefile, coverage target, narrative, or workflow server is
+imposed on projects adopting a skill. Keep the destination's license and tool
+configuration. The root `CLAUDE.md` and GitHub contribution templates govern this
+collection itself.
 
-## What's Included
+## The documentation persona
 
-| File / Directory | Purpose |
-|-----------------|---------|
-| [`CLAUDE.md`](CLAUDE.md) | Project conventions automatically loaded by Claude Code — directory structure, Makefile targets, test coverage, README requirements, code quality rules |
-| [`skills/`](skills/) | Reusable AI prompt templates (see [Skills Index](skills/README.md)) |
-| [`skills/config.yaml`](skills/config.yaml) | Behavior switches for optional conventions (for example, enabling/disabling PROVENANCE requirements) |
-| [`skills/PROVENANCE.md`](skills/PROVENANCE.md) | The origin story skill — style guide, character notes, chronicle chain, and checklist for adding new chapters |
-| [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/) | Repository issue templates for convention bugs and skill/convention requests |
-| [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) | Pull request checklist for skills, conventions, and behavior switch changes |
-| `.claude/skills/responsible-vibe/` | Structured development workflow skill for Claude Code |
-| `.github/skills/responsible-vibe/` | Structured development workflow skill for GitHub Copilot |
-| `.opencode/skills/responsible-vibe/` | Structured development workflow skill for OpenCode |
+The programmer announces technically ambitious projects to Sir Reginald von
+Fluffington III. The cat withholds endorsement. Stories use dry humor,
+mock history, and concrete details from the actual project.
 
-## Responsible Vibe MCP
+A story can mark meaningful AI assistance. Its absence says nothing about whether
+AI was involved. The voice is reusable without joining the numbered chronicle.
 
-The template includes the [responsible-vibe-mcp](https://github.com/mrsimpson/responsible-vibe-mcp) skill across multiple AI assistant platforms. This skill enforces structured development workflows — plan before you code, test what you build, review before you ship — rather than letting the AI jump straight into writing code without a plan.
+## Migrating from the old template
 
-The skill is installed for:
-- **Claude Code** (`.claude/skills/`)
-- **GitHub Copilot** (`.github/skills/`)
-- **OpenCode** (`.opencode/skills/`)
-
-You can disable expectations around this workflow for downstream repositories by setting `behavior_switches.responsible_vibe_workflow.enabled: false` in `skills/config.yaml`.
-
-## Usage
-
-1. Clone or use this repo as a GitHub template for a new project.
-2. Set `skills/config.yaml` switches for your project's preferred conventions.
-3. The `CLAUDE.md` will automatically guide AI assistants to follow project conventions.
-4. Replace this `README.md` with a project-specific one.
-5. If PROVENANCE switches are enabled, use the PROVENANCE skill to write your project's origin story chapter and chain it into the chronicle.
-
-## The Documentation Persona (Optional)
-
-Projects can include a section called "The Totally True and Not At All Embellished History of [Project Name]." Whether this is required depends on `skills/config.yaml`:
-
-- If `behavior_switches.provenance_story.enabled: true` and `require_readme_section: true`, include it.
-- If either switch is off, the section is optional and should not be enforced.
-
-When enabled, the section has practical purpose:
-
-- **Provenance tracking** — If a project has this section, an AI was meaningfully involved in its development. If it doesn't, the author worked alone.
-- **Serialized narrative** — Each project is a numbered chapter in a continuing chronicle, with navigation links chaining them together across repositories.
-- **Consistent voice** — Third-person limited, dry-humorous, mock-historical. The programmer announces things to his cat. The cat does not care.
-
-See [`skills/PROVENANCE.md`](skills/PROVENANCE.md) for the full style guide, character notes, and checklist.
+- Existing `skills/PROVENANCE.md` references remain supported.
+- `skills/config.yaml` retains legacy switch names, now all off. Missing
+  configuration also enables no automatic behavior.
+- Root assistant/MCP configuration and automatically discovered workflow skills
+  have moved to `examples/integrations/`.
+- Replace inherited mandatory conventions only where they came from this
+  template and the repository owner wants them removed. Preserve local additions.
+- Existing repositories are not silently migrated by updating this collection.
+  Review each destination's diff; never overwrite its README, license, or config.
 
 ## License
 
-BSD 2-Clause
+This collection is licensed under [BSD 2-Clause](LICENSE); bundled workflow
+skills retain their stated upstream license. Adopting a skill does not select or
+replace the destination project's license.

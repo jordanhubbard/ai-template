@@ -5,7 +5,7 @@
       "type": "local",
       "command": [
         "npx",
-        "@codemcp/workflows@latest"
+        "@codemcp/workflows@5.3.0"
       ]
     }
   }

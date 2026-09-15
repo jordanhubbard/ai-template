@@ -1,0 +1,686 @@
+{
+  "as_of": "2026-09-15",
+  "cutoff": "2026-03-15T00:00:00Z",
+  "ordering": "Earliest qualifying commit timestamp (committer date), normalized to UTC; repository name breaks ties. Forks use fork-specific history, excluding upstream ancestry.",
+  "chapters": [
+    {
+      "part": 1,
+      "name": "nanolang",
+      "label": "NanoLang",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of NanoLang",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-nanolang",
+      "chapter_url": "https://github.com/jordanhubbard/nanolang#the-totally-true-and-not-at-all-embellished-history-of-nanolang",
+      "existing": true,
+      "base_sha": "436a2caa0f76d761192b2b947078d628384a0259",
+      "original_sha256": "a72508624005e51ae92822d2a9bf9d94d209e62e0f034da72aad2d69b18fb9cb",
+      "updated_sha256": "cb25f73562e5508d0c10992ba64c88666f519f7d5d259eb6a85b322230e93738",
+      "first_ai": {
+        "sha": "03233e6229e72e00270ebd76626de25e70c2d156",
+        "author_date": "2025-09-30T03:43:20+00:00",
+        "date": "2025-09-30T03:43:20+00:00",
+        "author": "copilot-swe-agent[bot]",
+        "subject": "Complete nanolang language specification and documentation",
+        "trailers": []
+      },
+      "last_ai": {
+        "sha": "d62565d9c010c8b21257ff8c664fa0f5e2459d74",
+        "author_date": "2026-09-08T10:00:51-07:00",
+        "date": "2026-09-08T10:00:51-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "feat: translate NanoISA mixed int/string records",
+        "trailers": [
+          "Co-authored-by: factory-droid[bot] <138933559+factory-droid"
+        ]
+      }
+    },
+    {
+      "part": 2,
+      "name": "ai-code-reviewer",
+      "label": "AI Code Reviewer",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of AI Code Reviewer",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-ai-code-reviewer",
+      "chapter_url": "https://github.com/jordanhubbard/ai-code-reviewer#the-totally-true-and-not-at-all-embellished-history-of-ai-code-reviewer",
+      "existing": false,
+      "base_sha": "83147ced904efd6fadcee02e169f8a2c6dd2f82d",
+      "original_sha256": "74522e8340d2ee2d0b8649136835e0bf866bdd72ae0fb465b7bbbe40dfccc25b",
+      "updated_sha256": "7f6c7bf9224cf62ca290d0e17714f78147e6319bd95210e4572c382bce7bc8be",
+      "first_ai": {
+        "sha": "a7e067e6f12de3380bbafb63cd45613404384259",
+        "author_date": "2025-12-25T07:13:15-04:00",
+        "date": "2025-12-25T07:13:15-04:00",
+        "author": "Jordan Hubbard",
+        "subject": "FEATURE: Add beads sync branch and internal ops logging",
+        "trailers": [
+          "Co-authored-by: factory-droid[bot] <138933559+factory-droid"
+        ]
+      },
+      "last_ai": {
+        "sha": "689b34d8f598905c46e07a419b8fa85775a0f30f",
+        "author_date": "2026-05-27T12:15:39-07:00",
+        "date": "2026-05-27T12:15:39-07:00",
+        "author": "jkh",
+        "subject": "Make SET_SCOPE sticky so the LLM stops wandering between work units",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 3,
+      "name": "Aviation",
+      "label": "Aviation",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of Aviation",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-aviation",
+      "chapter_url": "https://github.com/jordanhubbard/Aviation#the-totally-true-and-not-at-all-embellished-history-of-aviation",
+      "existing": true,
+      "base_sha": "487125ab97c5c65c9863a4e0b89f7ea1f8156ac7",
+      "original_sha256": "473f1678c77f557ca8014896d461c795930e791576b3d4a91b85537648fc3c36",
+      "updated_sha256": "3b7ea6aee57622f70912ea6184dd825e6509953b3e1327150e94bad0b8cad550",
+      "first_ai": {
+        "sha": "9566824290802a0bf04bf0b587b263a7f6ebc5af",
+        "author_date": "2026-01-05T18:18:46+00:00",
+        "date": "2026-01-05T18:18:46+00:00",
+        "author": "copilot-swe-agent[bot]",
+        "subject": "Initial plan",
+        "trailers": []
+      },
+      "last_ai": {
+        "sha": "39696148690964d137517116b8a430cee101abeb",
+        "author_date": "2026-06-20T21:49:16-07:00",
+        "date": "2026-06-20T21:49:16-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Add navmath nav/aviation math helper module",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 4,
+      "name": "loom",
+      "label": "loom",
+      "readme": "README.md",
+      "heading": "The Story of Loom",
+      "anchor": "the-story-of-loom",
+      "chapter_url": "https://github.com/jordanhubbard/loom#the-story-of-loom",
+      "existing": true,
+      "base_sha": "cf9702bb49dfc00e0b551ffdc8847f9d789d5533",
+      "original_sha256": "28e769098f6721580058d15209063e3586888aa0fda654d1f98150065b6010bf",
+      "updated_sha256": "c0624540216df39ce9090432970cc648029d03a7e7e13b7c6d4595882e2fb26f",
+      "first_ai": {
+        "sha": "e537316217dd388251b6d9b02ff22ca055df4daa",
+        "author_date": "2026-01-18T17:34:22+00:00",
+        "date": "2026-01-18T17:34:22+00:00",
+        "author": "copilot-swe-agent[bot]",
+        "subject": "Initial plan",
+        "trailers": []
+      },
+      "last_ai": {
+        "sha": "4383a646d28bf1e2d90e971d28bbed57b292a99c",
+        "author_date": "2026-03-23T14:45:05-07:00",
+        "date": "2026-03-23T14:45:05-07:00",
+        "author": "Rocky \ud83d\udc3f\ufe0f",
+        "subject": "feat: implement deadline and overdue checking in loom_beads.go (fixes #33)",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 5,
+      "name": "autoyes",
+      "label": "AutoYes",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of AutoYes",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-autoyes",
+      "chapter_url": "https://github.com/jordanhubbard/autoyes#the-totally-true-and-not-at-all-embellished-history-of-autoyes",
+      "existing": false,
+      "base_sha": "ed3e74c8d2385b1f6e450968c93ee4a6606a07dd",
+      "original_sha256": "6c5453751e397b30ab7e6b3d3346502d2e4d4a534cc014262b76f55b96ab9458",
+      "updated_sha256": "43998c180318d93d4e6d95e203451e4787796fc6a0b8ee78f0625953e7ba0962",
+      "first_ai": {
+        "sha": "3995a684b97bb560b64cf5acb8617bd7f0581761",
+        "author_date": "2026-01-25T12:27:28-08:00",
+        "date": "2026-01-25T12:27:28-08:00",
+        "author": "Jordan Hubbard",
+        "subject": "Improve idle prompt detection for auto-approve",
+        "trailers": [
+          "Co-authored-by: factory-droid[bot] <138933559+factory-droid"
+        ]
+      },
+      "last_ai": {
+        "sha": "ed3e74c8d2385b1f6e450968c93ee4a6606a07dd",
+        "author_date": "2026-08-16T17:14:35-07:00",
+        "date": "2026-08-16T17:14:35-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Prefer \"don't ask again\" option in numbered approval menus",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 5 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 6,
+      "name": "dotfiles",
+      "label": "dotfiles",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of dotfiles",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-dotfiles",
+      "chapter_url": "https://github.com/jordanhubbard/dotfiles#the-totally-true-and-not-at-all-embellished-history-of-dotfiles",
+      "existing": false,
+      "base_sha": "73c56caaac59d0614c2f8d9b3d49ae10e8917249",
+      "original_sha256": "cb800592c4dc2dd549991526b73b47c9fcdc97a6d873db747a0047654f02db1d",
+      "updated_sha256": "00ebb289e5fedf5245648628c656ec5da88f905f4d3a6eed89bf7ce661c013a5",
+      "first_ai": {
+        "sha": "00317d1881fa29d1c38a6b83e3dc1027580a6279",
+        "author_date": "2026-02-10T08:43:25-08:00",
+        "date": "2026-02-10T08:43:25-08:00",
+        "author": "Jordan Hubbard",
+        "subject": "Add large model option (Qwen3-Coder-480B) with GPU sizing comments",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "3116cdba364a8d90e41fc21135eb5a28c130edce",
+        "author_date": "2026-08-19T10:03:27-07:00",
+        "date": "2026-08-19T10:03:27-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "dot.profile: put ~/.npm-global/bin on PATH",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 5 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 7,
+      "name": "tokenhub",
+      "label": "TokenHub",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of TokenHub",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-tokenhub",
+      "chapter_url": "https://github.com/jordanhubbard/tokenhub#the-totally-true-and-not-at-all-embellished-history-of-tokenhub",
+      "existing": false,
+      "base_sha": "7ba47728397ecc5e44263683e709084b5fd78658",
+      "original_sha256": "1818c92dec20c1875594cd8c861136f885280d7b7b69297ca3365934a5cf22ee",
+      "updated_sha256": "271c0fac18172eece7a3c6efc3f22a279712b509ae68fa950117f3a0bc942fe9",
+      "first_ai": {
+        "sha": "5430b2509e0bcdae13f0932e33c13d21b0da07e0",
+        "author_date": "2026-02-16T06:26:42+00:00",
+        "date": "2026-02-16T06:26:42+00:00",
+        "author": "copilot-swe-agent[bot]",
+        "subject": "Initial plan",
+        "trailers": []
+      },
+      "last_ai": {
+        "sha": "c48010f5e44c5e76247e347426000b042600b4e4",
+        "author_date": "2026-05-10T12:04:46-07:00",
+        "date": "2026-05-10T12:04:46-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Revert fleet-orchestrator package \u2014 moved into ACC standalone module",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 8,
+      "name": "shemacs",
+      "label": "shemacs",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of shemacs",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-shemacs",
+      "chapter_url": "https://github.com/jordanhubbard/shemacs#the-totally-true-and-not-at-all-embellished-history-of-shemacs",
+      "existing": true,
+      "base_sha": "9f2a9ea2eafbd59929bbbd22e45550cb02cdec3d",
+      "original_sha256": "6d8eaee9bef0fb21c09441b1a39b8324adef25eb49c916ad98e4da9604bb5d49",
+      "updated_sha256": "f312826dd76e00b8660d64cfdebf77d982813ed8a4236a1a897af6aa170e7841",
+      "first_ai": {
+        "sha": "b014e91cf7c4ccc9d25431c6c2b9905e9bde9695",
+        "author_date": "2026-02-25T09:00:43+00:00",
+        "date": "2026-02-25T09:00:43+00:00",
+        "author": "copilot-swe-agent[bot]",
+        "subject": "Initial plan",
+        "trailers": []
+      },
+      "last_ai": {
+        "sha": "649d7f55645c305591e34a5cd119256fd054e25d",
+        "author_date": "2026-04-13T00:13:53-07:00",
+        "date": "2026-04-13T00:13:53-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "fix: use space-free patterns in expect tests",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 9,
+      "name": "sheme",
+      "label": "sheme",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of sheme",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-sheme",
+      "chapter_url": "https://github.com/jordanhubbard/sheme#the-totally-true-and-not-at-all-embellished-history-of-sheme",
+      "existing": true,
+      "base_sha": "25e645e6836b21eeb79f96bddb5570e9b20a9521",
+      "original_sha256": "52a35f7dd322f2e15fc75aa6d6ebad074a9a7a51814156cf8a32cbca6d47d746",
+      "updated_sha256": "279575dd8770cf533ac37702e4acdbfae0c6b8eed6f0eb164d2be06ffdedd3a8",
+      "first_ai": {
+        "sha": "6f3265efb3a1fb7730aa91758dd6f89edcdff9cc",
+        "author_date": "2026-02-28T02:18:14+00:00",
+        "date": "2026-02-28T02:18:14+00:00",
+        "author": "copilot-swe-agent[bot]",
+        "subject": "Initial plan",
+        "trailers": []
+      },
+      "last_ai": {
+        "sha": "52056325920cdc2dd8c49200425a200ecd8c1ac0",
+        "author_date": "2026-04-12T21:50:20-07:00",
+        "date": "2026-04-12T21:50:20-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "perf: avoid tcsetattr(TCSADRAIN) per read-byte via dd coprocess",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 10,
+      "name": "webmux",
+      "label": "WebMux",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of WebMux",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-webmux",
+      "chapter_url": "https://github.com/jordanhubbard/webmux#the-totally-true-and-not-at-all-embellished-history-of-webmux",
+      "existing": true,
+      "base_sha": "d9b9802f3fb65d8cbeb75a4a488230528f721395",
+      "original_sha256": "dee99ff411d235e684bb0b3482b792b4bdd7148d52a2b0ab97360f2185e22abd",
+      "updated_sha256": "5b073406be4f665648165f5f3ab28c4e50ecd5d1fd48409a3878cb3ee99d2803",
+      "first_ai": {
+        "sha": "c4acae094f658d8708da963e524339e8e2d150cc",
+        "author_date": "2026-03-07T04:23:32+00:00",
+        "date": "2026-03-07T04:23:32+00:00",
+        "author": "copilot-swe-agent[bot]",
+        "subject": "Initial plan",
+        "trailers": []
+      },
+      "last_ai": {
+        "sha": "adb36e624245cd71b4ccc9ee407378a35b0d4c64",
+        "author_date": "2026-09-11T23:51:10-07:00",
+        "date": "2026-09-11T23:51:10-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Add Windows ARM64 packaging job (best-effort) (#67)",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 5 <noreply@anthropic",
+          "Co-Authored-By: Claude Sonnet 5 <noreply@anthropic",
+          "Co-authored-by: Claude Sonnet 5 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 11,
+      "name": "usdagent",
+      "label": "usdagent",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of usdagent",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-usdagent",
+      "chapter_url": "https://github.com/jordanhubbard/usdagent#the-totally-true-and-not-at-all-embellished-history-of-usdagent",
+      "existing": false,
+      "base_sha": "c4607e54f6efd9381a2f8dca91cdb54f43f3a33d",
+      "original_sha256": "43529a09d2a02fd67f729e83c9f1f1e2c1bbaa0f4d955bbcc7cd193545896712",
+      "updated_sha256": "30d6d92aafd08b94f6d449470dba789ed762667c63783c07b6dade5649fceb51",
+      "first_ai": {
+        "sha": "8bc7240a2ebc0285866059dbcef8c6eeee03e6c8",
+        "author_date": "2026-03-24T02:31:38-07:00",
+        "date": "2026-03-24T02:31:38-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "feat(wq-GH-002): implement USD generation backend with OpenUSD pxr bindings",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "caab5a1840bccdd9d7dee508865070f634d59468",
+        "author_date": "2026-03-26T20:57:19-07:00",
+        "date": "2026-03-26T20:57:19-07:00",
+        "author": "jkh",
+        "subject": "feat: implement API key auth, Docker packaging, and CI/CD (issues #5, #7, #8)",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 12,
+      "name": "Theseus",
+      "label": "Theseus",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of Theseus",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-theseus",
+      "chapter_url": "https://github.com/jordanhubbard/Theseus#the-totally-true-and-not-at-all-embellished-history-of-theseus",
+      "existing": true,
+      "base_sha": "3e9ab24c1f365be594b127abffdf2d09d4fbed4e",
+      "original_sha256": "c8433e7aba099a3af869af73829b6495a63e82ca16b47dfd8a86216a366713ac",
+      "updated_sha256": "ac0dc93a1f082b7add0b7fe5952546f7899890d8cd34e181a4290a3b4b70534e",
+      "first_ai": {
+        "sha": "9aa61285f1561d9f43633a9731e1bd3982eccb08",
+        "author_date": "2026-03-26T15:06:32-07:00",
+        "date": "2026-03-26T15:06:32-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Bootstrap Theseus: README, Makefile, tests, docs, PROVENANCE Part 6",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "3f1ba658d3243e92fa8cf5753ec72b2b7241b483",
+        "author_date": "2026-04-26T17:41:28-07:00",
+        "date": "2026-04-26T17:41:28-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "docs: refresh corpus stats and regenerate covered-library index",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 13,
+      "name": "agentos",
+      "label": "agentOS",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of agentOS",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-agentos",
+      "chapter_url": "https://github.com/jordanhubbard/agentos#the-totally-true-and-not-at-all-embellished-history-of-agentos",
+      "existing": false,
+      "base_sha": "9935e38426071187e8f3776852aaedbd25d9707c",
+      "original_sha256": "0004543d0aff7b79011915b96a3764684f79282017f3e707b46bc0f1588fa38a",
+      "updated_sha256": "0dc565506a6aa0cb12b369b667ac438560873499c16c292b7febbbe4da3c6397",
+      "first_ai": {
+        "sha": "95800012a2e6590df398c955de24aa6017c82bc5",
+        "author_date": "2026-03-29T01:14:33-07:00",
+        "date": "2026-03-29T01:17:13-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "feat: ARM64 board config + CI QEMU test harness",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "9935e38426071187e8f3776852aaedbd25d9707c",
+        "author_date": "2026-09-14T19:23:10-07:00",
+        "date": "2026-09-14T19:23:10-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "platform: qualify x86 VMX/EPT HLT exit",
+        "trailers": [
+          "Co-authored-by: factory-droid[bot] <138933559+factory-droid"
+        ]
+      }
+    },
+    {
+      "part": 14,
+      "name": "artlab",
+      "label": "Artlab",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of Artlab",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-artlab",
+      "chapter_url": "https://github.com/jordanhubbard/artlab#the-totally-true-and-not-at-all-embellished-history-of-artlab",
+      "existing": false,
+      "base_sha": "f90e6863e32945b7085af2d4726848bfb2154cf8",
+      "original_sha256": "945b7f0dfce7948a93b849e884d8de8f56878eb795acb3aeba4f61b38e89c336",
+      "updated_sha256": "4379739bd5262199d3b51e503d178a47267488d301ea0950c423855945f26e0d",
+      "first_ai": {
+        "sha": "58931c1a7028dcd76652bc910bb42d1d8eca3eb4",
+        "author_date": "2026-04-16T14:23:38-07:00",
+        "date": "2026-04-16T14:23:38-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Initial commit: audio-reactive 3D solar system visualization",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "f2c91a783bfd2df93e0bf7cb82f991fe6a4bfec0",
+        "author_date": "2026-04-24T12:10:38-07:00",
+        "date": "2026-04-24T12:10:38-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "docs: add CLAUDE.md with audio and production build guidelines",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 15,
+      "name": "crust",
+      "label": "Crust",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of Crust",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-crust",
+      "chapter_url": "https://github.com/jordanhubbard/crust#the-totally-true-and-not-at-all-embellished-history-of-crust",
+      "existing": false,
+      "base_sha": "ce46e20ebbd91102f2b88be63d5e2eb17cd0d876",
+      "original_sha256": "91562c67dd5fb33c05d350e9001f9027a8eb6a2476e02eef24c867add4c186a1",
+      "updated_sha256": "3e5467b0bae1b5815c5901026d068b2f31ab5ae56857cabf9da0626b979b81af",
+      "first_ai": {
+        "sha": "48c265923a2c6036074a98b8204d8227b78df561",
+        "author_date": "2026-04-21T12:09:39-07:00",
+        "date": "2026-04-21T12:09:39-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "feat: complete v0.2 interpreter, REPL, codegen, and stdlib",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "7517e463c7bc71b6ad26cc03f99c95bcdb3b6dea",
+        "author_date": "2026-05-04T17:03:23-07:00",
+        "date": "2026-05-04T17:03:23-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Sync docs to current state; correct coverage measurements (post-4ri)",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 16,
+      "name": "agentos_gui",
+      "label": "agentos_gui",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of agentos_gui",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-agentos_gui",
+      "chapter_url": "https://github.com/jordanhubbard/agentos_gui#the-totally-true-and-not-at-all-embellished-history-of-agentos_gui",
+      "existing": false,
+      "base_sha": "d40bf01a429b145ebe53aa35bbf6199f1ebef66b",
+      "original_sha256": "1b90cc7e75ad18740a7e51cf362751664801f5ff83282fcad302f1a0da60ed28",
+      "updated_sha256": "cb54a28f60f5750c366ad77e945327bf8e13eb5d3017a71e8c750d4878581b8e",
+      "first_ai": {
+        "sha": "033fcb20bb4ee1271aa004866ceb8c9c0c94e5c2",
+        "author_date": "2026-04-22T17:34:37-07:00",
+        "date": "2026-04-22T17:34:37-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "feat: initial commit \u2014 agentOS GUI (Tauri 2 + React/TypeScript)",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "d40bf01a429b145ebe53aa35bbf6199f1ebef66b",
+        "author_date": "2026-05-03T23:49:47-07:00",
+        "date": "2026-05-03T23:49:47-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "gui: render topology edge labels in HTML, not stretched SVG text",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 17,
+      "name": "pythonos",
+      "label": "PythonOS",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of PythonOS",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-pythonos",
+      "chapter_url": "https://github.com/jordanhubbard/pythonos#the-totally-true-and-not-at-all-embellished-history-of-pythonos",
+      "existing": true,
+      "base_sha": "6b7c1f5158a4638be231f551d61bf8735c9a6508",
+      "original_sha256": "b670b3d10c62e2eaa4085eec2daa5baa4271b0e9c44050c2dc49b3f46012ab1a",
+      "updated_sha256": "32b80dcbec5cfecdafdb953922a2c4654240b424e81d3d17bc837996e8489808",
+      "first_ai": {
+        "sha": "96a29eb3108d43c81d5610201f37ff5590d233f0",
+        "author_date": "2026-04-26T22:10:45-07:00",
+        "date": "2026-04-26T22:11:02-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Initial commit: PythonOS boots to interactive kernel shell",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "8060c43afbbd3c64f27e9e46f907314684aa8135",
+        "author_date": "2026-08-10T01:03:30-07:00",
+        "date": "2026-09-08T17:59:27-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Adopt pythonos into literate-ai via litai init --convert",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 (1M context) <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 18,
+      "name": "mac",
+      "label": "mac",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of mac",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-mac",
+      "chapter_url": "https://github.com/jordanhubbard/mac#the-totally-true-and-not-at-all-embellished-history-of-mac",
+      "existing": false,
+      "base_sha": "54894ad90c936cbedd36b0a87d7384f0d4520bf3",
+      "original_sha256": "b13e6e38062a107ea7fb1b772413dd44c1ae2434124362539cfb0c3eae452d2c",
+      "updated_sha256": "1c00c62ed113e3ddf772dd8907a752aa99d5cc1cee1b9218a083f9123f90e3af",
+      "first_ai": {
+        "sha": "f6993b1dc034351250cfd0931af76ce738280935",
+        "author_date": "2026-05-18T02:54:06+00:00",
+        "date": "2026-05-18T02:54:06+00:00",
+        "author": "copilot-swe-agent[bot]",
+        "subject": "Initial plan",
+        "trailers": []
+      },
+      "last_ai": {
+        "sha": "b51f031a5b7d40d2ada6c11673c5596164f835b3",
+        "author_date": "2026-09-07T09:01:19-07:00",
+        "date": "2026-09-07T16:01:19+00:00",
+        "author": "Jordan Hubbard",
+        "subject": "Reap merge-queue entries that win a slot but can never open a PR (#774)",
+        "trailers": [
+          "Co-authored-by: Claude Sonnet 5 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 19,
+      "name": "c26",
+      "label": "c26",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of c26",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-c26",
+      "chapter_url": "https://github.com/jordanhubbard/c26#the-totally-true-and-not-at-all-embellished-history-of-c26",
+      "existing": false,
+      "base_sha": "1df2b782afb1323c15d94226723f9e43c567fe0f",
+      "original_sha256": "2dc9dc0a8d1664ed082ca93ae8fb1cd79cd6ef5db583fd40c7b0c31552e07019",
+      "updated_sha256": "370d46bcaa9ba6bf64751dd6c203e60ee30504715e64e5544e307d57072c79f6",
+      "first_ai": {
+        "sha": "c848ead4822d51659f9d57ef48543f028f7e5b52",
+        "author_date": "2026-05-25T19:28:30-07:00",
+        "date": "2026-05-25T19:28:54-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Switch Dolt sync.remote to GitHub for hub accessibility",
+        "trailers": [
+          "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "1df2b782afb1323c15d94226723f9e43c567fe0f",
+        "author_date": "2026-07-22T17:07:58+01:00",
+        "date": "2026-07-22T17:07:58+01:00",
+        "author": "Jordan Hubbard",
+        "subject": "block: interrupt-driven completion wait instead of a busy-spin",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 4.8 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 20,
+      "name": "Orca-Flashforge",
+      "label": "Orca-Flashforge",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of Orca-Flashforge",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-orca-flashforge",
+      "chapter_url": "https://github.com/jordanhubbard/Orca-Flashforge#the-totally-true-and-not-at-all-embellished-history-of-orca-flashforge",
+      "existing": false,
+      "base_sha": "1d00c39c28e0eb2a1a667d341a47da80457cf52e",
+      "original_sha256": "354396810a8593c03ce380eb4956db527b78c9aa20987efdd62201d2dce88b14",
+      "updated_sha256": "7f79d4eb6b2f8091a494fc1e8dda1f19e019d2948ffa44b52812ef75b5b7458a",
+      "first_ai": {
+        "sha": "596cd8fc5f12982d4764b85ef652f399d0d63607",
+        "author_date": "2026-07-12T13:51:15+01:00",
+        "date": "2026-07-12T14:37:57+01:00",
+        "author": "Jordan Hubbard",
+        "subject": "Fix build on macOS 26 / Xcode 26 (clang 21) with CMake 4",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "1d00c39c28e0eb2a1a667d341a47da80457cf52e",
+        "author_date": "2026-07-14T19:11:50+01:00",
+        "date": "2026-07-14T19:11:50+01:00",
+        "author": "Jordan Hubbard",
+        "subject": "fix(ai): don't double the /v1 segment in provider endpoint URLs",
+        "trailers": [
+          "Co-Authored-By: Claude Fable 5 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 21,
+      "name": "OrcaSlicer",
+      "label": "OrcaSlicer",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of OrcaSlicer",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-orcaslicer",
+      "chapter_url": "https://github.com/jordanhubbard/OrcaSlicer#the-totally-true-and-not-at-all-embellished-history-of-orcaslicer",
+      "existing": false,
+      "base_sha": "5434d2cf2eb8129cb2ebdc06438b2a1ca8628eb7",
+      "original_sha256": "3499e5fa42636b572a64118811f5c7d29f01126506ee00538ca9797e6fa6d903",
+      "updated_sha256": "715430059c7e87a95191006919871f077ba2185ad1aef183f7918b348e2c1002",
+      "first_ai": {
+        "sha": "c47315e01955809330b1926db54df80595fd8bdd",
+        "author_date": "2026-07-13T17:44:40+01:00",
+        "date": "2026-07-13T17:44:40+01:00",
+        "author": "Jordan Hubbard",
+        "subject": "Add Flashforge Adventurer 5M Pro (Klipper mod) printer profiles",
+        "trailers": [
+          "Co-Authored-By: Claude Fable 5 <noreply@anthropic"
+        ]
+      },
+      "last_ai": {
+        "sha": "287e49263350d4b1a8c171e8aeabe95e48ce7a86",
+        "author_date": "2026-07-31T17:25:05+00:00",
+        "date": "2026-07-31T17:29:10+00:00",
+        "author": "MAC Fleet Worker",
+        "subject": "docs(ai): architecture PLAN, rewritten user guide, upstream PR notes",
+        "trailers": [
+          "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic"
+        ]
+      }
+    }
+  ]
+}
