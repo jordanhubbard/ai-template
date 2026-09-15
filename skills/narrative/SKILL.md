@@ -89,4 +89,3 @@ story never itself authorizes commits, pushes, releases, or unrelated changes.
 **Length:** Adapt to the existing README. Around 400–700 words suits a new chapter; a shorter story is welcome when a long appendix would overwhelm the project documentation.
 
 ---
-

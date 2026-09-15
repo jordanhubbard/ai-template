@@ -1,10 +1,8 @@
 ---
 name: responsible-vibe
 description: >
-  Structured development workflows for AI-assisted coding. Use when starting 
-  new features, fixing bugs, following TDD, refactoring code, or any development 
-  task that benefits from planning and structure. Activate it when 
-  users mention to build, enhance or fix code.
+  Follow the responsible-vibe development workflow when the user selects that
+  optional integration and its MCP server is available.
 license: MIT
 metadata:
   version: '5.3.0'
