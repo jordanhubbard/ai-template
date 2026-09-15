@@ -50,6 +50,8 @@ participates without being replaced by a second story.
 | 20 | [Orca-Flashforge](https://github.com/jordanhubbard/Orca-Flashforge#the-totally-true-and-not-at-all-embellished-history-of-orca-flashforge) | [2026-07-12](https://github.com/jordanhubbard/Orca-Flashforge/commit/596cd8fc5f12982d4764b85ef652f399d0d63607) | [2026-07-14](https://github.com/jordanhubbard/Orca-Flashforge/commit/1d00c39c28e0eb2a1a667d341a47da80457cf52e) | Added missing story |
 | 21 | [OrcaSlicer](https://github.com/jordanhubbard/OrcaSlicer#the-totally-true-and-not-at-all-embellished-history-of-orcaslicer) | [2026-07-13](https://github.com/jordanhubbard/OrcaSlicer/commit/c47315e01955809330b1926db54df80595fd8bdd) | [2026-07-31](https://github.com/jordanhubbard/OrcaSlicer/commit/287e49263350d4b1a8c171e8aeabe95e48ce7a86) | Added missing story |
 
+The complete [eligibility audit](reports/2026-09-15-eligibility.md) records all excluded repositories.
+
 ## Exclusions and historical links
 
 - `precis-mcp`, `omarchy`, and `frustbsd`: recent AI credits found in inherited upstream history, with no qualifying recent fork-specific credit found.

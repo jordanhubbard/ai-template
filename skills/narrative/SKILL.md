@@ -45,8 +45,9 @@ other facts without evidence; keep the cat's fictional opinions distinguishable.
 
 Only maintain the shared chain when the user requests it. Read
 [CHRONICLE.md](../../CHRONICLE.md) in this collection for the current index and
-ordering evidence; if unavailable, obtain it from the source repository before
-assigning a part. Do not use a copied, outdated table as proof of current order.
+ordering evidence; if unavailable, read the
+[maintained index on GitHub](https://github.com/jordanhubbard/ai-template/blob/main/CHRONICLE.md)
+before assigning a part. Do not use a copied, outdated table as proof of current order.
 
 Verify repository names, archive status, existing headings, and actual GitHub
 anchors. Preserve existing story headings and anchor compatibility. Use canonical
