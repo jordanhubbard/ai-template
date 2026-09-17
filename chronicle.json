@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-15",
+  "as_of": "2026-09-16",
   "cutoff": "2026-03-15T00:00:00Z",
   "ordering": "Earliest qualifying commit timestamp (committer date), normalized to UTC; repository name breaks ties. Only original-work repositories qualify; forks are excluded.",
   "chapters": [
@@ -613,6 +613,39 @@
         "subject": "block: interrupt-driven completion wait instead of a busy-spin",
         "trailers": [
           "Co-Authored-By: Claude Opus 4.8 <noreply@anthropic"
+        ]
+      }
+    },
+    {
+      "part": 20,
+      "name": "cudalab",
+      "label": "Cudalab",
+      "readme": "README.md",
+      "heading": "The Totally True and Not At All Embellished History of Cudalab",
+      "anchor": "the-totally-true-and-not-at-all-embellished-history-of-cudalab",
+      "chapter_url": "https://github.com/jordanhubbard/cudalab#the-totally-true-and-not-at-all-embellished-history-of-cudalab",
+      "existing": false,
+      "base_sha": "514488d9e21add1a12dfd9bfdbb56d53919bcbd5",
+      "original_sha256": "b2aec19356bcaa65f34d1d36c41ce7ec478a9a8d45ed3379662cb2b1251fbe8d",
+      "updated_sha256": "813e27ac1b70eb08997db3608534f5310164fafb61dba7132c7765aaeac2dd31",
+      "first_ai": {
+        "sha": "514488d9e21add1a12dfd9bfdbb56d53919bcbd5",
+        "author_date": "2026-09-16T22:50:43-07:00",
+        "date": "2026-09-16T22:50:43-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Document CUDA editor and formatting workflow",
+        "trailers": [
+          "Co-Authored-By: OpenAI Codex <noreply@openai.com"
+        ]
+      },
+      "last_ai": {
+        "sha": "e1622e97f220bf0b6183d56e55528aa5fbb312ac",
+        "author_date": "2026-09-16T22:51:22-07:00",
+        "date": "2026-09-16T22:51:22-07:00",
+        "author": "Jordan Hubbard",
+        "subject": "Add Cudalab to the project chronicle",
+        "trailers": [
+          "Co-Authored-By: OpenAI Codex <noreply@openai.com"
         ]
       }
     }

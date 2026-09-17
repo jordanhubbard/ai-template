@@ -4,7 +4,8 @@ The active reading order for Jordan Hubbard’s AI-assisted project narratives.
 
 ## Scope and chronology
 
-Audited on **2026-09-15**, using a six-month window beginning **2026-03-15 UTC**.
+Audited on **2026-09-15**, using a six-month window beginning **2026-03-15 UTC**,
+and extended on **2026-09-16** when Cudalab first qualified.
 A participating repository contains original work, is unarchived, and has a coding-agent co-author credit,
 with recorded AI-assisted activity inside that window. Forks of other people’s
 repositories are excluded, regardless of local AI contributions. Dependency-update bots do not count as
@@ -46,6 +47,7 @@ participates without being replaced by a second story.
 | 17 | [PythonOS](https://github.com/jordanhubbard/pythonos#the-totally-true-and-not-at-all-embellished-history-of-pythonos) | [2026-04-27](https://github.com/jordanhubbard/pythonos/commit/96a29eb3108d43c81d5610201f37ff5590d233f0) | [2026-09-09](https://github.com/jordanhubbard/pythonos/commit/8060c43afbbd3c64f27e9e46f907314684aa8135) | Preserved story; repaired navigation |
 | 18 | [mac](https://github.com/jordanhubbard/mac#the-totally-true-and-not-at-all-embellished-history-of-mac) | [2026-05-18](https://github.com/jordanhubbard/mac/commit/f6993b1dc034351250cfd0931af76ce738280935) | [2026-09-07](https://github.com/jordanhubbard/mac/commit/b51f031a5b7d40d2ada6c11673c5596164f835b3) | Added missing story |
 | 19 | [c26](https://github.com/jordanhubbard/c26#the-totally-true-and-not-at-all-embellished-history-of-c26) | [2026-05-26](https://github.com/jordanhubbard/c26/commit/c848ead4822d51659f9d57ef48543f028f7e5b52) | [2026-07-22](https://github.com/jordanhubbard/c26/commit/1df2b782afb1323c15d94226723f9e43c567fe0f) | Added missing story |
+| 20 | [Cudalab](https://github.com/jordanhubbard/cudalab#the-totally-true-and-not-at-all-embellished-history-of-cudalab) | [2026-09-17](https://github.com/jordanhubbard/cudalab/commit/514488d9e21add1a12dfd9bfdbb56d53919bcbd5) | [2026-09-17](https://github.com/jordanhubbard/cudalab/commit/e1622e97f220bf0b6183d56e55528aa5fbb312ac) | Added missing story |
 
 The complete [eligibility audit](reports/2026-09-15-eligibility.md) records all excluded repositories.
 
@@ -68,7 +70,9 @@ commits and README hashes record exactly which content was preserved during
 this retrofit.
 
 The [publication report](reports/2026-09-15-publication.md) links each repository's
-integrated change and records the fork restorations.
+integrated change and records the fork restorations. The
+[Cudalab extension report](reports/2026-09-16-cudalab.md) records the evidence and
+reciprocal-link update for Part 20.
 
 ### Validate the chain
 
